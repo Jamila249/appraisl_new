@@ -21,7 +21,7 @@ class Tickets(models.Model):
     description = fields.Text('Description', track=True,required=True)
     sequence = fields.Char("Sequence",default=lambda self: _('New'),readonly=True)
     team_id = fields.Many2one('hd.team', string='Helpdesk Team', index=True,required=True)
-    assign_to = fields.Many2many('res.users', string='Assign To',domain=[('team_id','=',team_id)])
+    assign_to = fields.Many2many('res.users', string='Assign To')
     priority=fields.Selection([('low','Low'),('medium','Medium'),('high','High')],string='Priority')
     tag_ids=fields.Many2many('hd.tags', string='Tags')
     time_submit=fields.Datetime(string="Open Date", default=lambda *a: datetime.datetime.now())
