@@ -232,7 +232,7 @@
                         </button>
                         </div>
                 </xpath>
-                <xpath expr="//field[@name='partner_id']" position="after">
+                <xpath expr="//field[@name='signature']" position="after">
                     <field name="team_id"/>
                </xpath>
 
