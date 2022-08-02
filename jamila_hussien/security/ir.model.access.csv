@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+teams,hd.team,model_hd_team,hr.group_hr_manager,1,1,1,1
+tickets,hd.ticket,model_hd_ticket,hr.group_hr_manager,1,1,1,1
+tags,hd.tags,model_hd_tags,hr.group_hr_manager,1,1,1,1
+report_excel,team.ticket.report,model_team_ticket_report,hr.group_hr_manager,1,1,1,1
+report_excel_excel,team.ticket.report.excel,model_team_ticket_report_excel,hr.group_hr_manager,1,1,1,1
+
+
